@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/editData.css">
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <center><p class="alert alert-success" style="margin-top: 10px;" id="alert"><%= alert%></p></center>
+    <div class="row">
+        <div class="col-sm-8 edit-head"><h4>Edit the user Data</h4></div>
+    </div>
+    <form method="post" action="/AdminPanel/Update/<%= user._id %>" onsubmit="return validate()" class="edit">
+        <p class="edit-hd">Username:</p>
+        <input placeholder="Username" type="text" name="username" id="username" value="<%=user.username%>" class="form-control edit-cont">
+        <p class="edit-hd">Email:</p>
+        <input placeholder="Email" type="text" name="email" id="email" value="<%=user.email%>" class="form-control edit-cont">
+        <p class="edit-hd">New Password:</p>
+        <input placeholder="Password" type="password" name="password" id="password"  class="form-control edit-cont"><br>
+        <button class="btn btn-primary edit-btn" type="submit">Edit</button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+          </svg><a href="/AdminPanel" class="back">Back to Admin Panel</a>
+    </form>
+    
+<!-- SCRIPT FUNCTIONS -->
+<script>
+   function validate(){
+   let username = document.getElementById('username')
+   let useremail = document.getElementById('email')
+   let userpassword = document.getElementById('password')
+   const emailPattern = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+   if(userpassword.value == ''){
+        return true
+   }else  if (userpassword.value.length <= 5 || userpassword.value.length >= 15) {
+        alert("Length of password must be between 5 and 15 ");
+        return false;
+   }else if (!emailPattern.test(useremail.value)) {
+        alert("Email is not valid");
+        return false;
+      }else{
+             return  true;
+           }
+      }
+
+      setTimeout(() => {
+        let alert = document.getElementById('alert')
+        alert.style.display="none"
+      }, 3000);
+</script>
+</body>
+</html>

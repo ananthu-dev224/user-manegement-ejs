@@ -1,0 +1,42 @@
+body{
+   background-image: url('/assets/userHome.png');
+   overflow: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.edit-hd{
+    margin-left: 320px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.edit-cont{
+    margin-left: 320px;
+    margin-top: 10px;
+    width: 565px;
+    border: 1px solid rgb(255, 166, 0);
+}
+.edit-btn{
+    margin-left: 320px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.edit{
+    width: 100%;
+}
+.edit-head{
+    margin-left: 320px;
+    margin-top: 10px;
+    font-weight: 800;
+    font-variant: small-caps;
+    text-decoration: underline;
+}
+.back{
+    text-decoration: none; 
+    color:  orange; 
+    font-size: small;
+}
+.back:hover{
+    text-decoration: none;
+    color: green;
+}

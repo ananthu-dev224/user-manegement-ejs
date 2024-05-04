@@ -1,0 +1,40 @@
+body{
+    background-image: url("./assets/Welcome\ \,.png");
+}
+.edts{
+    background-image: url();
+    width: 400px;
+    height: fit-content;
+    margin-left: 63%;
+    margin-top: 30px;
+    border: 2px solid rgb(241, 180, 66);
+    border-radius: 5px;
+    padding: 20px 20px;
+}
+.form-header{
+    margin-bottom: 30px;
+}
+.line{
+    margin-top: 30px;
+}
+.dec{
+    font-weight: 600;
+}
+.btn{
+    font-weight: 400;
+    margin-top: 10px;
+    color: white;
+}
+.btn-cont{
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+.form-control:focus{
+    border: 1px solid rgb(255, 166, 0);
+}
+.back{
+    text-decoration: none; 
+    color:  rgb(0, 0, 0); 
+    font-size: small;
+}

@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url('/assets/adminpanel.png');
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.tb{
+    width: 50%;
+}
+.navbtn{
+    margin-right: 30px;
+}
+.admp{
+    margin-left: 600px;
+    font-weight: 700;
+    font-size: 35px;
+}
+.usrdt{
+    margin-left: 200px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.srch{
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(255, 166, 0);
+}
+.srchbtn{
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+.alrt{
+    width: 500px;
+    border-radius: 5px;
+    margin-left: 200px;
+    margin-top: 10px;
+    /* background: linear-gradient(to bottom, #ffcccc, #ff6666); */
+    height: 40px;
+    font-weight: 600;
+}
+
+/* Table */
+.tb{
+    margin-left: 200px;
+    border: 2px solid #000;
+}
+.edit{
+    text-decoration: none;
+    padding-left: 50px;
+    color:rgb(30, 30, 206);
+    font-weight: 500;
+}
+.delete{
+    background: linear-gradient(to bottom, #ffcccc, #ff6666);
+    border: 1px solid #000;
+    height: 30px;
+    width: 30px;
+}
+.insrt-head{
+    margin-left: 320px;
+    text-decoration: underline
+}
+.insrt-cont{
+    margin-left: 320px;
+    margin-top: 10px;
+    width: 565px;
+    border: 1px solid rgb(255, 166, 0);
+}
+.insrt-btn{
+    margin-left: 320px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
